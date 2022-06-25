@@ -1,3 +1,13 @@
+def show_tasks():
+    print()
+
+def add_task():
+    print()
+
+def delete_task():
+    print()
+
+
 while True:
     print ()
     print ("0. Show all tasks")
@@ -8,11 +18,11 @@ while True:
     choice = int(input ("Choose option:"))
 
     if choice == 0:
-        print()
+        show_tasks()
     if choice == 1:
-        print()
+        add_task()
     if choice == 2:
-        print()
+        delete_task()
     if choice == 3: 
         break
     else:
