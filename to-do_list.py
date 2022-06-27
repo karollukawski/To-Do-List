@@ -10,7 +10,9 @@ def show_tasks():
     print(tasks)
 
 def add_task():
-    print()
+    task = input("Add task to list: ")
+    tasks.append(task)
+    print(task)
 
 def delete_task():
     print()
