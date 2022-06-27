@@ -14,10 +14,14 @@ def add_task():
     task = input("Add task to list: ")
     tasks.append(task)
     print(task)
+    print ()
     print ("Task added to list!")
 
 def delete_task():
-    print()
+    task_index = int(input("Give the number of task to delete: "))
+    tasks.pop(task_index)
+    print ()
+    print ("Task deleted from list!")
 
 
 while choice != 4:
