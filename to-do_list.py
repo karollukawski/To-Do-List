@@ -1,7 +1,13 @@
+from typing import List
+
 choice = -1
 
+tasks = []
+
 def show_tasks():
-    print()
+    tasks.append("Do shopping")
+    tasks.append("Clean the desk")
+    print(tasks)
 
 def add_task():
     print()
@@ -10,7 +16,7 @@ def delete_task():
     print()
 
 
-while choice != 5:
+while choice != 4:
     print ()
     print ("0. Show all tasks")
     print ("1. Add a task")
@@ -18,7 +24,7 @@ while choice != 5:
     print ("3. Save changes in the file")
     print ("4. Exit")
 
-    choice = int(input ("Choose option:"))
+    choice = int(input ("Choose option: "))
 
     if choice == 0:
         show_tasks()
@@ -29,6 +35,4 @@ while choice != 5:
     if choice == 3: 
         print()
     if choice == 4:
-        break
-    else:
         break
