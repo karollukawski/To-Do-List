@@ -1,3 +1,5 @@
+choice = -1
+
 def show_tasks():
     print()
 
@@ -8,7 +10,7 @@ def delete_task():
     print()
 
 
-while True:
+while choice != 5:
     print ()
     print ("0. Show all tasks")
     print ("1. Add a task")
