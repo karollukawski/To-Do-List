@@ -5,9 +5,10 @@ choice = -1
 tasks = []
 
 def show_tasks():
-    tasks.append("Do shopping")
-    tasks.append("Clean the desk")
-    print(tasks)
+    task_index = 0
+    for task in tasks:
+        print("[" + str(task_index) + "] " + task)
+        task_index += 1
 
 def add_task():
     task = input("Add task to list: ")
