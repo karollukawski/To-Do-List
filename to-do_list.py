@@ -19,6 +19,10 @@ def add_task():
 
 def delete_task():
     task_index = int(input("Give the number of task to delete: "))
+    if task_index < 0 or task_index > len(tasks) - 1:
+        print ()
+        print ("There are no tasks with that index")
+        return
     tasks.pop(task_index)
     print ()
     print ("Task deleted from list!")
