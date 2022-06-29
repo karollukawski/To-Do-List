@@ -32,6 +32,19 @@ def save_tasks_to_file():
     for task in tasks:
         file.write(task + "\n")
     file.close()
+    print ()
+    print ("The changes have been made to To-Do_List.txt!")
+
+def load_tasks_from_file():
+    try:
+        file = open ("To-Do_List.txt")
+        for line in file.readlines():
+            tasks.append(line.strip())
+        file.close()
+    except FileNotFoundError:
+        return
+
+load_tasks_from_file()
 
 while choice != 4:
     print ()
