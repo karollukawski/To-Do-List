@@ -27,6 +27,8 @@ def delete_task():
     print ()
     print ("Task deleted from list!")
 
+def save_task_t0_file():
+    file = open ("To-Do_List.txt", "w")
 
 while choice != 4:
     print ()
@@ -37,7 +39,7 @@ while choice != 4:
     print ("4. Exit")
     print ()
 
-    choice = int(input ("Choose option: "))
+    choice = int(input("Choose option: "))
 
     if choice == 0:
         show_tasks()
@@ -46,6 +48,6 @@ while choice != 4:
     if choice == 2:
         delete_task()
     if choice == 3: 
-        print()
+        save_tasks_to_file()
     if choice == 4:
         break
