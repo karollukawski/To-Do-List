@@ -55,7 +55,7 @@ while choice != 4:
     print ("4. Exit")
     print ()
 
-    choice = int(input("Choose option: "))
+    choice = int(input("Choose your option: "))
 
     if choice == 0:
         show_tasks()
