@@ -28,7 +28,7 @@ def delete_task():
     print ("Task deleted from list!")
 
 def save_tasks_to_file():
-    file = open ("To-Do_List.txt", "w")
+    file = open ("to-do_list.txt", "w")
     for task in tasks:
         file.write(task + "\n")
     file.close()
